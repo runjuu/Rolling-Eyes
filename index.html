@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <meta name="apple-mobile-web-app-title" content="🙄">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>🙄</title>
+  <style>
+    * {
+      pointer-events: none;
+    }
+    #face {
+      width: 84.74576vw;
+      max-width: 84.74576vh;
+      height: 100vw;
+      max-height: 100vh;
+      background: #606060;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #face > div {
+      height: 80vw;
+      max-height: 80vh;
+      width: 25vw;
+      max-width: 25vh;
+      border-radius: 100%/35%;
+    }
+
+    #face .eyes {
+      background: #FFFFFF;
+      position: relative;
+    }
+
+    #face .eyes .eyeball {
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 83%;
+      height: 13%;
+      background: #000000;
+      border-radius: 100%;
+      transform: translate(-50%, 0);
+      animation: 🙄 3s 1s infinite ease-in;
+    }
+
+    @keyframes 🙄 {
+      0% {
+        transform: translate(-50%, 0);
+      }
+      7% {
+        transform: translate(-50%, calc(-80vw + 100%));
+      }
+      100% {
+        transform: translate(-50%, calc(-80vw + 100%));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="face">
+    <div class="eyes">
+      <i class="eyeball"></i>
+    </div>
+    <div class="eyes">
+      <i class="eyeball"></i>
+    </div>
+  </div>
+</body>
+
+</html>
